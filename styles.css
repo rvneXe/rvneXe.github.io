@@ -1,0 +1,153 @@
+#csoon {
+    font-size: 25px;
+    text-align: center;
+    margin: 50px auto;
+}
+@font-face {
+    font-family: Sahel VF;
+    src: url('https://cdn.jsdelivr.net/gh/rastikerdar/sahel-font@v3.4.0/dist/Sahel-VF.woff2') format('woff2');
+}
+
+:root {
+    --theme-font: "Red Hat Display", "Noto Sans JP", Sahel VF, serif;
+    --theme-color1: #d87093;
+    --theme-color1-light: #febcd3;
+    --theme-color1-rail: #4e343b;
+    --theme-color1-rail-active: #d8709386;
+    --theme-color1-rail-text: #ffffff;
+
+    --md-icon-font: 'Material Symbols Rounded';
+    --md-sys-color-primary: var(--theme-color1);
+    --md-sys-color-secondary-container: color-mix(in oklab, #FFFFFF 90%, var(--md-sys-color-primary) 50%);
+    --md-sys-color-surface-container-highest: color-mix(in oklab, #FFFFFF 90%, var(--md-sys-color-primary) 25%);
+    --md-sys-color-on-primary: #000000;
+}
+
+.navbut{
+    width: 80px;
+    margin: -2px auto 14px;
+    padding: 2px;
+}
+.navbut .navicon{
+    font-family: 'Material Symbols Rounded';
+    font-variation-settings: inherit;
+	font-variation-settings: 'FILL' 1, 'wght' 400, "opsz" 24;
+    opacity: 0.8;
+}
+.navbut:hover .navicon {
+    font-variation-settings: 'FILL' 1, "wght" 600, "opsz" 24;
+    background: rgba(255, 255, 255, 0.1);
+    opacity: 1;
+}
+.navbut .navicon.active{
+    color: var(--theme-color1-light);
+    font-variation-settings: "FILL" 1, "wght" 400, "opsz" 24;
+    background: var(--theme-color1-rail-active);
+    opacity: 1;
+}
+.navbut:hover .navicon.active{
+    font-variation-settings: "FILL" 1, "wght" 600, "opsz" 24;
+    background: color-mix(in oklab, var(--theme-color1-rail-active) 90%, #ffffff 7%);
+    opacity: 1;
+}
+.navbut:hover .label{
+    font-variation-settings: "wght" 700, "GRAD" 125;
+    opacity: 1;
+}
+.navbut .label.active{
+    font-variation-settings: "wght" 800, "GRAD" 125;
+    opacity: 1;
+}
+
+.navbut .label{
+    font-size: 14px;
+    transition: font-variation-settings .2s cubic-bezier(.2,0,0,1);
+    font-variation-settings: 'wght' 400, "opsz" 17;
+    margin-bottom: 4px;
+    font-family: var(--theme-font), serif;
+    text-align: center;
+    opacity: 0.8;
+}
+
+.navicon {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    height: 32px;
+    margin-right: auto;
+    margin-bottom: 4px;
+    margin-left: auto;
+    transition: font-variation-settings .2s cubic-bezier(.2,0,0,1);
+    font-variation-settings: "wght" 400, "opsz" 24;
+    transition: font-variation-settings .2s cubic-bezier(.2,0,0,1);
+    border-radius: 16px;
+}
+.navicon::before{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transform: scaleX(.32);
+    transition-duration: .2s;
+    transition-property: transform, opacity;
+    transition-timing-function: linear;
+    border-radius: 100px;
+    content: "";
+    z-index: -1;
+}
+
+body {
+    background-color: rgb(44, 35, 38);
+    font-family: var(--theme-font), serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--theme-color1-rail-text);
+    margin: 0;
+}
+
+a {
+    color: var(--theme-color1-rail-text);
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 24px;
+    font-variation-settings: "GRAD"0, "opsz"17;
+    padding: 1px;
+    border-radius: 4px;
+    text-decoration: none;
+    margin-bottom: 4px;
+    transition: font-variation-settings .2s cubic-bezier(.2, 0, 0, 1);
+    text-align: center;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+left-nav-rail {
+    background: var(--theme-color1-rail);
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    overflow-y: auto;
+    z-index: 8;
+    box-sizing: border-box;
+}
+
+.nav-rail-content {
+    display: flex;
+    flex-direction: column;
+    width: 88px;
+    margin-top: 20px;
+}
+.content-container{
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100vh - 64px);
+    overflow-y: auto; padding-left: 88px;
+}
