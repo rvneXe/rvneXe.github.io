@@ -1,8 +1,3 @@
-#csoon {
-    font-size: 25px;
-    text-align: center;
-    margin: 50px auto;
-}
 @font-face {
     font-family: Sahel VF;
     src: url('https://cdn.jsdelivr.net/gh/rastikerdar/sahel-font@v3.4.0/dist/Sahel-VF.woff2') format('woff2');
@@ -22,6 +17,36 @@
     --md-sys-color-surface-container-highest: color-mix(in oklab, #FFFFFF 90%, var(--md-sys-color-primary) 25%);
     --md-sys-color-on-primary: #000000;
 }
+
+
+left-nav-rail {
+    background: var(--theme-color1-rail);
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    overflow-y: auto;
+    z-index: 8;
+    box-sizing: border-box;
+}
+.nav-rail-content {
+    display: flex;
+    flex-direction: column;
+    width: 88px;
+    margin-top: 20px;
+}
+@media screen and (max-width: 640px) {
+    left-nav-rail {
+        flex-direction: row;
+        height: auto;
+        bottom: 0;
+    }
+    .nav-rail-content {
+        flex-direction: row;
+        width: 100vw;
+    }
+}   
 
 .navbut{
     width: 80px;
@@ -124,30 +149,21 @@ a {
     vertical-align: baseline;
 }
 
-left-nav-rail {
-    background: var(--theme-color1-rail);
-    display: flex;
-    position: fixed;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
-    overflow-y: auto;
-    z-index: 8;
-    box-sizing: border-box;
-}
-
-.nav-rail-content {
-    display: flex;
-    flex-direction: column;
-    width: 88px;
-    margin-top: 20px;
-}
 .content-container{
     display: flex;
     flex-grow: 1;
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
+    justify-content: left;
+    flex-direction: row;
     min-height: calc(100vh - 64px);
+    height: 100vh;
     overflow-y: auto; padding-left: 88px;
+}
+
+
+#info {
+    position: fixed;
+    z-index: 0;
+    font-size: 25px;
+    text-align: center;
+    margin: 50px 0;
 }
