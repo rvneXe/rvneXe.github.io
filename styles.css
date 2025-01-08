@@ -164,6 +164,11 @@ a {
 }
 
 .content-container{
+b {
+    font-variation-settings: 'wght' 650;
+    font-weight: 650;
+}
+
 t {
     font-size: 40px;
     font-variation-settings: 'wght' 300;
