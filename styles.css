@@ -4,7 +4,7 @@
 }
 
 :root {
-    --theme-font: "Red Hat Display", "Noto Sans JP", Sahel VF, serif;
+    --theme-font: "Red Hat Display", "Noto Sans JP", Sahel VF, "Noto Color Emoji", serif;
     --theme-color1: #d87093;
     --theme-color1-light: #febcd3;
     --theme-color1-rail: #4e343b;
