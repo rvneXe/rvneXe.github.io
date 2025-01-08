@@ -202,6 +202,21 @@ t tsub {
     overflow-y: auto; padding-left: 88px;
 }
 
+#raven {
+    content: url("./img/raven-default1.png");
+    z-index: -1;
+    object-fit: contain;
+}
+@media screen and (min-height: 1080px) {
+    #raven {
+        content: url("./img/raven-default2.png");
+    }
+}
+@media screen and (min-height: 2048px) {
+    #raven {
+        content: url("./img/raven-default4.png");
+    }
+}
 
 #info {
     position: fixed;
