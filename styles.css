@@ -4,6 +4,11 @@
 }
 
 :root {
+    --text-color: #ffffff;
+    --text-color-negative: #000000;
+    --text-color-low: color-mix(in oklab, var(--text-color) 100%, var(--text-color-negative) 75%);
+    --text-color-mid: color-mix(in oklab, var(--text-color) 100%, var(--text-color-negative) 50%);
+
     --theme-font: "Red Hat Display", "Noto Sans JP", Sahel VF, "Noto Color Emoji", serif;
     --theme-color1: #d87093;
     --theme-color1-light: #febcd3;
