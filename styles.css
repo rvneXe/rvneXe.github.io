@@ -38,7 +38,7 @@ left-nav-rail {
 .nav-rail-content {
     display: flex;
     flex-direction: column;
-    width: 88px;
+    width: 96px;
     padding-top: 24px;
 }
 
@@ -50,7 +50,7 @@ left-nav-rail {
 .navbut .navicon{
     font-family: 'Material Symbols Rounded';
     font-variation-settings: inherit;
-	font-variation-settings: 'FILL' 1, 'wght' 400, "opsz" 24;
+	font-variation-settings: 'FILL' 0, 'wght' 400, "opsz" 24;
     opacity: 0.8;
 }
 .navbut:hover .navicon {
