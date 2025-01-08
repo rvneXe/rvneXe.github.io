@@ -218,8 +218,12 @@ t tsub {
     }
 }
 
-#info {
-    position: fixed;
+.info {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    left: -180px;
     z-index: 0;
     font-size: 25px;
     text-align: center;
