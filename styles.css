@@ -251,7 +251,7 @@ t tsub {
 }
 
 .article {
-    overflow-y: scroll;
+    overflow-y: auto;
     position: relative;
     display: flex;
     align-items: flex-start;
