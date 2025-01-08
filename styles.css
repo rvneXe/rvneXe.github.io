@@ -39,19 +39,8 @@ left-nav-rail {
     display: flex;
     flex-direction: column;
     width: 88px;
-    margin-top: 20px;
+    padding-top: 24px;
 }
-@media screen and (max-width: 640px) {
-    left-nav-rail {
-        flex-direction: row;
-        height: auto;
-        bottom: 0;
-    }
-    .nav-rail-content {
-        flex-direction: row;
-        width: 100vw;
-    }
-}   
 
 .navbut{
     width: 80px;
@@ -98,6 +87,26 @@ left-nav-rail {
     text-align: center;
     opacity: 0.8;
 }
+
+@media screen and (max-width: 640px) {
+    left-nav-rail {
+        flex-direction: row;
+        height: auto;
+        bottom: 0;
+        height: 80px;
+    }
+    .nav-rail-content {
+        flex-direction: row;
+        width: 100vw;
+        margin-top: 0;
+        padding-top: 12px;
+        padding-bottom: 16px;
+    }
+    .navbut {
+        margin-right: auto;
+        margin-left: auto;
+    }
+}   
 
 .navicon {
     display: flex;
