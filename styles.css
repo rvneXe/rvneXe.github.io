@@ -164,6 +164,30 @@ a {
 }
 
 .content-container{
+t {
+    font-size: 40px;
+    font-variation-settings: 'wght' 300;
+    font-weight: 300;
+    text-align: left; text-align-last:justify;
+    white-space: pre-line;
+    line-height: 1.1em;
+    display: inline-block;
+    unicode-bidi: isolate;
+} 
+t.s {
+    font-size: 30px;
+}
+t .l {
+    font-size: 44px;
+}
+t tsub {
+    text-align: justify;
+    font-size: 20px;
+    font-variation-settings: 'wght' 400;
+    font-weight: 400;
+    color: var(--text-color-mid);
+}
+
     display: flex;
     flex-grow: 1;
     justify-content: left;
