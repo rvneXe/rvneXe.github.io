@@ -217,6 +217,9 @@ t tsub {
     .content-container{
         padding-left: 0;
     }
+    .content-container.hasarticle {
+        overflow: hidden;
+    }
 }   
 
 #raven {
@@ -247,3 +250,38 @@ t tsub {
     margin: 50px 0;
 }
 
+.article {
+    overflow-y: scroll;
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    white-space: pre-line;
+    font-size: 18px;
+    font-variation-settings: 'wght' 300;
+    text-align: left;
+    padding: 1em 5em 1em 1em;
+}
+.article p{
+    text-indent: 1.5em;
+}
+.article h1{
+    border-bottom: 1px solid var(--theme-color1);
+    margin-block-end: 0;
+}
+.article h2{
+    border-bottom: 1px solid var(--theme-color1);
+    margin-block-end: 0;
+    font-size: 1.4em;
+}
+@media screen and (max-width: 640px) {
+    .article{
+        padding-right: 1em;
+        margin-bottom: 80px;
+    }
+}   
+
+
+.rtl {
+    text-align: right !important;
+}
