@@ -244,7 +244,7 @@ t tsub {
     align-items: flex-start;
     flex-direction: column;
     left: -180px;
-    z-index: 0;
+    z-index: 1;
     font-size: 25px;
     text-align: center;
     margin: 50px 0;
@@ -285,3 +285,36 @@ t tsub {
 .rtl {
     text-align: right !important;
 }
+
+.socials {
+    display: flex;
+}
+
+.corners--slanted {
+    background: var(--theme-color1);
+    padding: 7px;
+    mask-image: 
+      linear-gradient(
+        135deg,
+        transparent .25rem, 
+        gold 0
+      ),
+      linear-gradient(
+        -135deg,
+        transparent .25rem, 
+        gold 0
+      ),
+      linear-gradient(
+        45deg,
+        transparent .25rem, 
+        gold 0
+      ),
+      linear-gradient(
+        -45deg,
+        transparent .25rem, 
+        gold 0
+      );
+    mask-position: 0% 0, 100% 0, 0 100%, 100% 100%;
+    mask-repeat: no-repeat;
+    mask-size: 51% 51%;
+  }
