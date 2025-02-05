@@ -1,0 +1,96 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سال گودمن - وکیل دادگستری</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+
+    <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css" />
+    <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+        rel="stylesheet" />
+
+    <script src="https://esm.run/@material/web/all.js" type="module"></script>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="dragLeft">
+        <img src="../img/dragR_fa.png" style="z-index: 201">
+    </div>
+    <div class="content-container saul">
+        <img id="saul">
+        <div style="display: flex; flex-direction: column; align-items: flex-end;">
+            <div class="info">
+                <t class="l">سال گودمن
+                    <tsub>جیمز مورگان مک گیل</tsub>
+                </t>
+            </div>
+            <div class="info">
+                <p><span style="font-size: 30px;">وکیل پایه یک دادگستری</span>
+                </br></br>با بیش از ۱۰ سال سابقۀ وکالت
+                    </br>دکتری حقوق از دانشگاه علامه طباطبایی 
+                </br>حل و فصل بیش از ۲۰۰ پروندۀ مهم کشور
+                </p>
+            </div>
+            <div class="info" style="margin:0; background-color: var(--theme-color1); color: #000000; width: 300px; height: 92px; text-align: right;">
+                <p style="margin:0; padding: 10px" dir="rtl">همین الان با سال تماس بگیر!</br>503-4455 (505)</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script>
+    function wait(ms) {
+        var start = new Date().getTime();
+        var end = start;
+        while (end < start + ms) {
+            end = new Date().getTime();
+        }
+    }
+
+    const pointerScroll = (elem) => {
+
+        const dragStart = (ev) => elem.setPointerCapture(ev.pointerId);
+        const dragEnd = (ev) => elem.releasePointerCapture(ev.pointerId);
+        const drag = (ev) => elem.hasPointerCapture(ev.pointerId) && (elem.scrollLeft -= ev.movementX);
+
+        elem.addEventListener("pointerdown", dragStart);
+        elem.addEventListener("pointerup", dragEnd);
+        elem.addEventListener("pointermove", drag);
+    };
+
+    document.querySelectorAll(".content-container").forEach(pointerScroll);
+
+    function removeOverlay(instant=false){
+        const overlay = document.getElementById("dragLeft");
+        if (instant) {
+            overlay.style.display = "none";
+        } else {
+            overlay.style.opacity = "0";
+            setTimeout(() => overlay.style.display = "none", 1000);
+        }
+        document.removeEventListener("click", clickHandler);
+    }
+
+    function clickHandler() {
+        removeOverlay(true);
+    }
+
+    if (window.screen.width <= 896) {
+        document.getElementById("dragLeft").style.display = "flex";
+        setTimeout(removeOverlay, 3000);
+        document.addEventListener("pointerdown", clickHandler);
+    }
+</script>
+
+</html>
