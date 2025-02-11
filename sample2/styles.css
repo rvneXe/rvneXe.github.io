@@ -8,10 +8,10 @@
     font-weight: 500;
     src: local('Product Sans Medium'), url('https://fonts.cdnfonts.com/s/14955/ProductSans-Medium.woff') format('woff');
 }
-/* @font-face {
+@font-face {
     font-family: 'Material Symbols Rounded';
     src: url('material.woff2');
-} */
+}
 
 :root {
     --text-color: #ffffff;
