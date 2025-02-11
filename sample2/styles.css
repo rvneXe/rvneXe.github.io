@@ -292,10 +292,7 @@ t tsub {
     font-size: 18px;
     font-variation-settings: 'wght' 300;
     text-align: right;
-    padding: 1em 5em 1em 1em;
-}
-.article p{
-    text-indent: 1.5em;
+    padding: 1em 3em 1em 1em;
 }
 .article h1{
     border-bottom: 1px solid var(--theme-color1);
@@ -310,12 +307,16 @@ t tsub {
     .article{
         padding-right: 1em;
     }
+}  
+@media screen and (max-width: 450px) {
+    h1{
+        font-size: 1.5em;
+    }
 }   
 
 
 .rtl {
-    text-align: left !important;
-    text-align: right;
+    text-align: right !important;
 }
 
 .socials {
