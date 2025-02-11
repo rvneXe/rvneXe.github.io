@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset=UTF-8">
+    <title>صفحۀ اصلی</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="preconnect" target="_blank" href="https://fonts.googleapis.com">
+    <link rel="preconnect" target="_blank" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" target="_blank" href="https://cdn.jsdelivr.net">
+    <link rel="preconnect" target="_blank" href="https://fonts.cdnfonts.com">
+
+    <script src="https://esm.run/@material/web/all.js" type="module"></script>
+
+    <link target="_blank" href="material.woff2" rel="stylesheet" />
+
+    <link
+        target="_blank" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+        rel="stylesheet" />
+
+    <link rel="stylesheet" target="_blank" href="styles.css">
+</head>
+
+<body>
+    <left-nav-rail>
+        <nav class="nav-rail-content">
+            <a class="navbut" aria-label="Home" target="_blank" href="./index.html">
+                <md-icon class="navicon active">home</md-icon>
+                <div class="label active">صفحۀ اصلی</div>
+            </a>
+            <a class="navbut" aria-label="Donate" target="_blank" href="https://www.hnsch.ir/userindex.php">
+                <md-icon class="navicon">dashboard</md-icon>
+                <div class="label">پنل دانش‌آموز</div>
+            </a>
+            <a class="navbut" aria-label="Online Class" onclick="onlineClass()">
+                <md-icon class="navicon">school</md-icon>
+                <div class="label">کلاس آنلاین</div>
+            </a>
+            <a class="navbut" aria-label="Contact" onclick="contact()">
+                <md-icon class="navicon">call</md-icon>
+                <div class="label">تماس</div>
+            </a>
+        </nav>
+    </left-nav-rail>
+    <md-dialog id="contact-dialog" dir="rtl">
+        <div slot="headline">تماس با دبیرستان</div>
+        <form slot="content" id="form-id" method="dialog" style="display: flex; flex-direction: column; align-items: center; gap: 7px;">
+            <md-filled-tonal-button dir="ltr" target="_blank" href="tel:05138447767">051 - 38447767</md-filled-tonal-button>
+            <md-filled-tonal-button dir="ltr" target="_blank" href="tel:05138438494">051 - 38438494</md-filled-tonal-button>
+        </form>
+        <div slot="actions">
+            <md-filled-button form="form-id">بستن</md-filled-button>
+        </div>
+    </md-dialog>
+    <md-dialog id="class-dialog" dir="rtl">
+        <div slot="headline">لینک کلاس‌های آنلاین</div>
+        <form slot="content" id="form-id2" method="dialog" style="display: flex; flex-direction: column; align-items: center; gap: 7px;">
+            <div>
+                <md-filled-tonal-button dir="ltr" target="_blank" href="https://www.skyroom.online/ch/hn2d2/class1051">دهم ریاضی - 1051</md-filled-tonal-button>
+                <md-filled-tonal-button dir="ltr" target="_blank" href="https://www.skyroom.online/ch/hn2d2/class1052">دهم ریاضی - 1052</md-filled-tonal-button>
+            </div>
+            <div>
+                <md-filled-tonal-button dir="ltr" target="_blank" href="https://www.skyroom.online/ch/hn2d2/class1061">دهم تجربی - 1061</md-filled-tonal-button>
+                <md-filled-tonal-button dir="ltr" target="_blank" href="https://www.skyroom.online/ch/hn2d2/class1062">دهم تجربی - 1062</md-filled-tonal-button>
+            </div>
+            <div>
+                <md-filled-tonal-button dir="ltr" target="_blank" href="https://www.skyroom.online/ch/hn2d2/class1151">یازدهم ریاضی - 1151</md-filled-tonal-button>
+                <md-filled-tonal-button dir="ltr" target="_blank" href="https://www.skyroom.online/ch/hn2d2/class1152">یازدهم ریاضی - 1152</md-filled-tonal-button>
+            </div>
+            <div>
+                <md-filled-tonal-button dir="ltr" target="_blank" href="https://www.skyroom.online/ch/hn2d2/class1161">یازدهم تجربی - 1161</md-filled-tonal-button>
+                <md-filled-tonal-button dir="ltr" target="_blank" href="https://www.skyroom.online/ch/hn2d2/class1162">یازدهم تجربی - 1162</md-filled-tonal-button>
+            </div>
+            <div>
+                <md-filled-tonal-button dir="ltr" target="_blank" href="https://www.skyroom.online/ch/hn2d2/class1251">دوازدهم ریاضی - 1251</md-filled-tonal-button>
+                <md-filled-tonal-button dir="ltr" target="_blank" href="https://www.skyroom.online/ch/hn2d2/class1252">دوازدهم ریاضی - 1252</md-filled-tonal-button>
+            </div>
+            <div>
+                <md-filled-tonal-button dir="ltr" target="_blank" href="https://www.skyroom.online/ch/hn2d2/class1261">دوازدهم تجربی - 1261</md-filled-tonal-button>
+                <md-filled-tonal-button dir="ltr" target="_blank" href="https://www.skyroom.online/ch/hn2d2/class1262">دوازدهم تجربی - 1262</md-filled-tonal-button>
+            </div>
+        </form>
+        <div slot="actions">
+            <md-filled-button form="form-id2">بستن</md-filled-button>
+        </div>
+    </md-dialog>
+    <div class="content-container hasarticle">
+        <div class="article rtl" dir="rtl">
+            <h1 style="border-bottom: none; font-variation-settings: 'wght' 700;">دبیرستان شهید هاشمی نژاد ۲</h1>
+            <p>به سایت دبیرستان شهید هاشمی نژاد ۲ خیلی خوش اومدی😊!</p>
+            <p>برای ورود به پنل کاربری، از کشوی کنار صفحه اقدام کن.</p>
+            <h2>امام علی (ع)</h2>
+            <p>ای جوانان؛ آبروی خود را با ادب حفظ کنید و دینتان را به‌وسیلۀ دانش نگهداری نمایید.</p>
+            <h2>تولدت مبارک!</h2>
+            <p><iframe src="https://www.hnsch.ir/index2.php?app=viewer&vid=PU1ETw"></iframe></p>
+        </div>
+    </div>
+</body>
+
+<script>
+    function contact(){
+        document.getElementById('contact-dialog').setAttribute('open', '')
+    }
+
+    function onlineClass(){
+        document.getElementById('class-dialog').setAttribute('open', '')
+    }
+</script>
+
+</html>
