@@ -42,6 +42,10 @@
     --md-dialog-supporting-text-font: var(--theme-font);
 }
 
+.link {
+    color: var(--theme-color1);
+    text-decoration: underline;
+}
 
 left-nav-rail {
     background: var(--theme-color1-rail);
