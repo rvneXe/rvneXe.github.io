@@ -10,9 +10,9 @@
     --text-color-mid: color-mix(in oklab, var(--text-color) 100%, var(--text-color-negative) 50%);
 
     --theme-font: "Red Hat Display", "Noto Sans JP", Sahel VF, "Noto Color Emoji", serif;
-    --theme-color1: #d87093;
+    --theme-color1: #ff9dbe;
     --theme-color1-light: #febcd3;
-    --theme-color1-rail: #4e343b;
+    --theme-color1-rail: #4e3442;
     --theme-color1-rail-active: #d8709386;
     --theme-color1-rail-text: #ffffff;
 
@@ -22,6 +22,15 @@
     --md-sys-color-surface-container-highest: color-mix(in oklab, #FFFFFF 90%, var(--md-sys-color-primary) 25%);
     --md-sys-color-on-primary: #000000;
 }
+::-moz-selection { /* Code for Firefox */
+    color: var(--text-color-negative);
+    background: var( --theme-color1);  
+  }
+  
+  ::selection {
+    color: var(--text-color-negative);
+    background: var( --theme-color1);  
+  }
 
 
 left-nav-rail {
