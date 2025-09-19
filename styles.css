@@ -213,12 +213,6 @@ t tsub {
     /* background: url("./img/raven-default1.png") no-repeat local content-box left bottom;
     background-size: contain; */
 }
-.content-container.raven {
-    overflow-x: hidden;
-    overflow-y: hidden;
-    touch-action: none;
-    user-select: none;
-}
 .content-container.rtl {
     justify-content: right;
 }
