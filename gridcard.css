@@ -14,6 +14,11 @@
 	border: 1px solid var(--theme-color1);
 	border-radius: 5px;
 	padding: .5rem;
+    background-color: #ffffff00;
+    transition: background-color .2s ease-out;
+}
+.cardview .card:hover {
+    background-color: #ffffff0c;
 }
 
 .card.special {
