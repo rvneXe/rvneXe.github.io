@@ -290,31 +290,34 @@ t tsub {
     display: flex;
 }
 
-.corners--slanted {
-    background: var(--theme-color1);
+.socialbtn {
     padding: 7px;
+    background: var(--theme-color1);
     mask-image: 
       linear-gradient(
         135deg,
-        transparent .25rem, 
-        gold 0
+        transparent .20rem, 
+        #000000 0
       ),
       linear-gradient(
         -135deg,
-        transparent .25rem, 
-        gold 0
+        transparent .20rem, 
+        #000000 0
       ),
       linear-gradient(
         45deg,
-        transparent .25rem, 
-        gold 0
+        transparent .20rem, 
+        #000000 0
       ),
       linear-gradient(
         -45deg,
-        transparent .25rem, 
-        gold 0
+        transparent .20rem, 
+        #000000 0
       );
+    mask-size: 80% 80%;
     mask-position: 0% 0, 100% 0, 0 100%, 100% 100%;
     mask-repeat: no-repeat;
-    mask-size: 51% 51%;
   }
+.socialbtn.game {
+    background: color-mix(in oklab, var(--theme-color1) 100%, #ffffff 40%);
+}
