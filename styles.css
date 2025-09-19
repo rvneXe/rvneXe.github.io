@@ -208,8 +208,8 @@ t tsub {
     flex-direction: row;
     min-height: calc(100vh - 64px);
     height: 100vh;
-    padding-left: 96px;
-    padding-bottom: 0;
+    margin-left: 96px;
+    padding: 20px;
     /* background: url("./img/raven-default1.png") no-repeat local content-box left bottom;
     background-size: contain; */
 }
@@ -224,6 +224,9 @@ t tsub {
         overflow: hidden;
     }
 }   
+.content-container.full {
+    padding: 0;
+}
 
 #raven {
     content: url("./img/raven-default1.png");
