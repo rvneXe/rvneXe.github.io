@@ -286,6 +286,13 @@ t tsub {
         margin-bottom: 80px;
     }
 }   
+.title-mid {
+    width: 100%;
+    font-size: xx-large;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: .6em;
+}
 
 
 .rtl {
