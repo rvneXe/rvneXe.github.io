@@ -203,6 +203,7 @@ t tsub {
 
 .content-container {
     display: flex;
+    box-sizing: border-box;
     flex-grow: 1;
     justify-content: left;
     flex-direction: row;
