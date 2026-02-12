@@ -162,7 +162,6 @@ a {
     letter-spacing: 0;
     line-height: 24px;
     font-variation-settings: "GRAD"0, "opsz"17;
-    padding: 1px;
     border-radius: 4px;
     text-decoration: none;
     margin-bottom: 4px;
@@ -181,7 +180,7 @@ t {
     font-size: 40px;
     font-variation-settings: 'wght' 300;
     font-weight: 300;
-    text-align: left; text-align-last:justify;
+    text-align: left;
     white-space: pre-line;
     line-height: 1.1em;
     display: inline-block;
