@@ -201,6 +201,11 @@ t tsub {
     color: var(--text-color-mid);
 }
 
+sep {
+    height: 10px;
+    width: 100%;
+}
+
 .content-container {
     display: flex;
     box-sizing: border-box;
