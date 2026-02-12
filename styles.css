@@ -208,14 +208,14 @@ sep {
 
 .content-container {
     display: flex;
+    justify-content: center;
     overflow-y: auto;
     box-sizing: border-box;
     flex-grow: 1;
-    justify-content: left;
     flex-direction: row;
     height: 100vh;
     margin-left: 96px;
-    padding: 20px;
+    padding: 20px 20px 0 20px;
     /* background: url("./img/raven-default1.png") no-repeat local content-box left bottom;
     background-size: contain; */
 }
