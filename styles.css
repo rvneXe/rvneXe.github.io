@@ -208,11 +208,11 @@ sep {
 
 .content-container {
     display: flex;
+    overflow-y: auto;
     box-sizing: border-box;
     flex-grow: 1;
     justify-content: left;
     flex-direction: row;
-    min-height: calc(100vh - 64px);
     height: 100vh;
     margin-left: 96px;
     padding: 20px;
@@ -224,7 +224,9 @@ sep {
 }
 @media screen and (max-width: 640px) {
     .content-container{
-        padding-left: 0;
+        height: calc(100vh - 80px);
+        margin-left: 0;
+        margin-bottom: 80px;
     }
     .content-container.hasarticle {
         overflow: hidden;
@@ -235,11 +237,16 @@ sep {
 }
 
 #raven {
+    position: relative;
+    height: 100%;
+    width: fit-content;
+    object-fit: contain; /* Ensures no stretching */
+    object-position: left center; /* Centers the image */
+    left: 0;
     content: url("./img/raven-default1.png");
     z-index: -1;
-    object-fit: contain;
 }
-@media screen and (min-height: 1080px) {
+@media screen and (min-height: 1000px) {
     #raven {
         content: url("./img/raven-default2.png");
     }
@@ -255,7 +262,6 @@ sep {
     display: flex;
     align-items: flex-start;
     flex-direction: column;
-    left: -180px;
     z-index: 1;
     font-size: 25px;
     text-align: center;
@@ -307,6 +313,13 @@ sep {
 
 .socials {
     display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.socials a {
+    display: block;
+}
+.socials a div{
 }
 
 .socialbtn {
@@ -315,22 +328,22 @@ sep {
     mask-image: 
       linear-gradient(
         135deg,
-        transparent .20rem, 
+        transparent 3px, 
         #000000 0
       ),
       linear-gradient(
         -135deg,
-        transparent .20rem, 
+        transparent 3px, 
         #000000 0
       ),
       linear-gradient(
         45deg,
-        transparent .20rem, 
+        transparent 3px, 
         #000000 0
       ),
       linear-gradient(
         -45deg,
-        transparent .20rem, 
+        transparent 3px, 
         #000000 0
       );
     mask-size: 80% 80%;
