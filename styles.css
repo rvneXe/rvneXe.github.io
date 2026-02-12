@@ -129,6 +129,7 @@ left-nav-rail {
     margin-left: auto;
     transition: font-variation-settings .2s cubic-bezier(.2,0,0,1);
     font-variation-settings: "wght" 400, "opsz" 24;
+    font-size: 24px;
     transition: font-variation-settings .2s cubic-bezier(.2,0,0,1);
     border-radius: 16px;
 }
