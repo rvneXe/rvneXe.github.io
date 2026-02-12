@@ -12,9 +12,9 @@
     --theme-font: "Red Hat Display", "Noto Sans JP", Sahel VF, "Noto Color Emoji", serif;
     --theme-color1: #ff9dbe;
     --theme-color1-light: #febcd3;
-    --theme-color1-rail: #4e3442;
-    --theme-color1-rail-active: #d8709386;
-    --theme-color1-rail-text: #ffffff;
+    --theme-color1-container: #4e3442;
+    --theme-color1-container-active: #d8709386;
+    --theme-color1-container-text: #ffffff;
 
     --md-icon-font: 'Material Symbols Rounded';
     --md-sys-color-primary: var(--theme-color1);
@@ -34,7 +34,7 @@
 
 
 left-nav-rail {
-    background: var(--theme-color1-rail);
+    background: var(--theme-color1-container);
     display: flex;
     position: fixed;
     flex-direction: column;
@@ -70,12 +70,12 @@ left-nav-rail {
 .navbut .navicon.active{
     color: var(--theme-color1-light);
     font-variation-settings: "FILL" 1, "wght" 400, "opsz" 24;
-    background: var(--theme-color1-rail-active);
+    background: var(--theme-color1-container-active);
     opacity: 1;
 }
 .navbut:hover .navicon.active{
     font-variation-settings: "FILL" 1, "wght" 600, "opsz" 24;
-    background: color-mix(in oklab, var(--theme-color1-rail-active) 90%, #ffffff 7%);
+    background: color-mix(in oklab, var(--theme-color1-container-active) 90%, #ffffff 7%);
     opacity: 1;
 }
 .navbut:hover .label{
@@ -152,12 +152,12 @@ body {
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    color: var(--theme-color1-rail-text);
+    color: var(--theme-color1-container-text);
     margin: 0;
 }
 
 a {
-    color: var(--theme-color1-rail-text);
+    color: var(--theme-color1-container-text);
     font-weight: 500;
     letter-spacing: 0;
     line-height: 24px;
