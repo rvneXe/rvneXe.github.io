@@ -226,7 +226,6 @@ sep {
     .content-container{
         height: calc(100vh - 80px);
         margin-left: 0;
-        margin-bottom: 80px;
     }
     .content-container.hasarticle {
         overflow: hidden;
