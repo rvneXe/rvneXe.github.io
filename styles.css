@@ -230,6 +230,11 @@ sep {
     .content-container.hasarticle {
         overflow: hidden;
     }
+}
+@media screen and (max-width: 870px) {
+    .content-container{
+        min-width: max-content;
+    }
 }   
 .content-container.full {
     padding: 0;

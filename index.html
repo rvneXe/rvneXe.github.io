@@ -110,6 +110,14 @@
 </body>
 
 <script>
+    window.addEventListener('load', function () {
+        if (window.innerWidth <= 870) {
+            document.querySelector('body').scroll({
+                left: 1000,
+                behavior: "smooth",
+            });
+        }
+    });
 </script>
 
 </html>
