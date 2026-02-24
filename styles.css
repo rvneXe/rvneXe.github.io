@@ -2,6 +2,10 @@
     font-family: Sahel VF;
     src: url('https://cdn.jsdelivr.net/gh/rastikerdar/sahel-font@v3.4.0/dist/Sahel-VF.woff2') format('woff2');
 }
+@font-face {
+    font-family: Redhat Slash;
+    src: url('font/RedHatSlashFix.woff2') format('woff2');
+}
 
 :root {
     --text-color: #ffffff;
@@ -9,7 +13,7 @@
     --text-color-low: color-mix(in oklab, var(--text-color) 100%, var(--text-color-negative) 75%);
     --text-color-mid: color-mix(in oklab, var(--text-color) 100%, var(--text-color-negative) 50%);
 
-    --theme-font: "Red Hat Display", "Noto Sans JP", Sahel VF, "Noto Color Emoji", serif;
+    --theme-font: "Redhat Slash", "Red Hat Display", "Noto Sans JP", Sahel VF, "Noto Color Emoji", serif;
     --theme-color1: #ff9dbe;
     --theme-color1-light: #febcd3;
     --theme-color1-container: #4e3442;
